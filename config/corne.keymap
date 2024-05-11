@@ -22,8 +22,8 @@
 
             bindings = <
 &kp ESC    &kp Q  &kp W  &kp E     &kp R     &kp T    &kp Y      &kp U          &kp I      &kp O    &kp P     &kp BSPC
-&kp TAB    &kp A  &kp S  &kp D     &kp F     &kp G    &kp H      &kp J          &kp K      &kp L    &kp SEMI  &kp RET
-&kp LSHFT  &kp Z  &kp X  &kp C     &kp V     &kp B    &kp N      &kp M          &kp COMMA  &kp DOT  &kp FSLH  &kp SINGLE_QUOTE
+&kp TAB    &kp A  &kp S  &kp D     &kp F     &kp G    &kp H      &kp J          &kp K      &kp L    &kp SEMI  &kp SINGLE_QUOTE
+&kp LSHFT  &kp Z  &kp X  &kp C     &kp V     &kp B    &kp N      &kp M          &kp COMMA  &kp DOT  &kp FSLH  &kp RET
                          &kp LALT  &kp LGUI  &mo 1    &kp SPACE  &kp RIGHT_GUI  &mo 2
             >;
         };
@@ -38,7 +38,7 @@
             bindings = <
 &kp ESCAPE      &kp N1  &kp N2  &kp N3     &kp N4  &kp N5              &kp N6             &kp N7    &kp N8    &kp N9     &kp N0  &kp DELETE
 &kp CAPS        &none   &none   &none      &none   &none               &kp LEFT           &kp DOWN  &kp UP    &kp RIGHT  &trans  &trans
-&kp LEFT_SHIFT  &none   &none   &trans     &trans  &kp LEFT_BRACKET    &kp RIGHT_BRACKET  &trans    &trans    &trans     &trans  &kp DOUBLE_QUOTES
+&kp LEFT_SHIFT  &none   &none   &trans     &trans  &kp LEFT_BRACKET    &kp RIGHT_BRACKET  &trans    &trans    &trans     &trans  &none
                                 &kp LCTRL  &trans  &kp SPACE           &kp RET            &trans    &kp RALT
             >;
         };
@@ -51,10 +51,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp TAB     &kp EXCL      &kp AT        &kp HASH  &kp DLLR  &kp PRCNT            &kp CARET  &kp AMPS   &kp ASTRK  &kp LPAR  &kp RPAR  &kp BSPC
-&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &none     &none     &ext_power EP_TOG    &kp MINUS  &kp EQUAL  &kp LBKT   &kp RBKT  &kp BSLH  &kp GRAVE
-&kp LSHFT   &none         &none         &none     &trans    &bootloader          &kp UNDER  &kp PLUS   &kp LBRC   &kp RBRC  &kp PIPE  &kp TILDE
-                                        &kp LGUI  &trans    &kp SPACE            &kp RET    &trans     &kp RALT
+&kp TAB     &kp EXCL      &kp AT        &kp HASH  &kp DLLR    &kp PRCNT            &kp CARET          &kp AMPS    &kp ASTRK  &kp LPAR  &kp RPAR  &kp BSPC
+&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &none     &none       &ext_power EP_TOG    &kp MINUS          &kp EQUAL   &kp LBKT   &kp RBKT  &kp BSLH  &kp TILDE
+&kp LSHFT   &none         &none         &none     &trans      &bootloader          &kp UNDER          &kp PLUS    &kp LBRC   &kp RBRC  &kp PIPE  &kp RET
+                                        &kp LGUI  &sys_reset  &ext_power EP_ON     &ext_power EP_OFF  &sys_reset  &kp RALT
             >;
         };
     };
